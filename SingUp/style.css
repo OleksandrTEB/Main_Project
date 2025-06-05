@@ -1,51 +1,60 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Custom", sans-serif;
-    color: white;
+body{
+    background-color: blanchedalmond;
+    font-size: 1.2rem;
 }
-body {
-    height: 3000px;
+section {
+    margin: 8% auto;
+    width: 40%;
 }
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
+section > form {
+    background-color: rgb(241, 207, 165);
 }
-.head {
+form {
+    background-color: rgb(241, 207, 165);
+    border-radius: 10px;
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+
+}
+.gender {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(58, 182, 75);
-    width: 100%;
 }
-.logo{
-    margin-left: 1%;
-    width: 10%;
+.gen {
+    margin-right: 20px;
 }
-.nav-menu {
+input {
+    padding: 10px 0px;
+}
+.submits {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-around;
-    width: 25%;
-    align-items: center;
 }
-.nav-menu > div {
-    padding: 6px 10px;
-    background-color: rgb(15, 99, 43);
-    border-radius: 5px;
-    margin: 3px 0px;
+input[type="button"] {
+    border: none;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 1.2rem;
 }
-.nav-menu > div > a {
-    cursor: pointer;
+input[value="Submit"] {
+    background-color: rgb(44, 141, 44);
 }
-.nav-menu > div > a {
-    text-decoration: none;
+input[value="Submit"]:hover {
+    background-color: rgb(20, 97, 20);
 }
-.nav:hover {
-    background-color: rgb(14, 68, 32);
+input[value="Submit"]:active {
+    background-color: green;
 }
-.nav:active {
-    background-color: rgb(10, 43, 21);
+input[value="Clear"] {
+    background-color: rgb(218, 44, 44);
+}
+input[value="Clear"]:hover {
+    background-color: rgb(165, 29, 29);
+}
+input[value="Clear"]:active {
+    background-color: rgb(226, 9, 9);
 }
