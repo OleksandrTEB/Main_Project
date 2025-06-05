@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <link rel="stylesheet" href="../Global_css/style.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,12 +17,41 @@
                 <div class="nav singup"><a href="../Home/index.html">Home</a></div>
                 <div class="nav login"><a href="../LogIn/index.html">LogIn</a></div>
                 <div class="nav contact"><a href="../Contact/index.html">Contact</a></div>
-                <!-- <div class="nav btn"><input type="button" value="Change mode"></div> -->
             </div>
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <section>
+            <div class="singup">
+                <form action="#" method="post">
+                    <div class="Username">
+                        <label for="">Creat Username</label>
+                        <input type="text" name="Username" id="Username" placeholder="Enter Username...">
+                    </div>
+                    <div class="e-mail">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" name="e-mail" id="e-mail" placeholder="Enter E-mail...">
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Entre Password...">
+                    </div>
+                    <div class="gender">
+                        <label for="chekgender" class="gen">Gender</label>
+                        <input type="radio" name="chekgender" id="chekgender">
+                        <label for="chekgender">Male</label>
+                        <input type="radio" name="chekgender" id="chekgender">
+                        <label for="chekgender">Famele</label>
+                    </div>
+                    <div class="submits">
+                        <input type="button" value="Submit">
+                        <input type="button" value="Clear">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 </body>
