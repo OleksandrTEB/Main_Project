@@ -1,51 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Custom", sans-serif;
-    color: white;
+body{
+    background-color: blanchedalmond;
 }
-body {
-    height: 3000px;
+section {
+    margin: 8% auto;
+    max-width: 20%;
+    color: black;
 }
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-.head {
+section > form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(58, 182, 75);
-    width: 100%;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgb(241, 207, 165);
+    border-radius: 10px;
 }
-.logo{
-    margin-left: 1%;
-    width: 10%;
+section > form > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
 }
-.nav-menu {
+input {
+    padding: 10px 0px;
+}
+.e-mail > label, .password > label {
+    color: rgb(68, 65, 65);
+    font-size: 1.2rem;
+}
+.license {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    width: 25%;
-    align-items: center;
+    margin: 0 auto;
 }
-.nav-menu > div {
-    padding: 6px 10px;
-    background-color: rgb(15, 99, 43);
-    border-radius: 5px;
-    margin: 3px 0px;
-}
-.nav-menu > div > a {
-    cursor: pointer;
-}
-.nav-menu > div > a {
-    text-decoration: none;
-}
-.nav:hover {
-    background-color: rgb(14, 68, 32);
-}
-.nav:active {
-    background-color: rgb(10, 43, 21);
+input[type="checkbox"] {
+    margin-right: 10px;
 }
